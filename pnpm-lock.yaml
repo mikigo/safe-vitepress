@@ -11,9 +11,6 @@ importers:
 
   .:
     dependencies:
-      '@auth0/auth0-vue':
-        specifier: ^2.4.0
-        version: 2.4.0
       axios:
         specifier: ^1.11.0
         version: 1.11.0
@@ -107,17 +104,6 @@ packages:
   '@algolia/requester-node-http@5.20.4':
     resolution: {integrity: sha512-Jc/bofGBw4P9nBii4oCzCqqusv8DAFFORfUD2Ce1cZk3fvUPk+q/Qnu7i9JpTSHjMc0MWzqApLdq7Nwh1gelLg==}
     engines: {node: '>= 14.0.0'}
-
-  '@auth0/auth0-spa-js@2.3.0':
-    resolution: {integrity: sha512-zAW6w79UO+G1+3AxboVQIUIZy05xluSOb1ymGg2dqG0pIi0JxEtZGec05BOf2LJ9SehzW4WeCYUQsYD9BjrVpQ==}
-
-  '@auth0/auth0-vue@2.4.0':
-    resolution: {integrity: sha512-12iLvojP8Pvxqu2Abxzksp0HqlSovGiAUhWrppnOaJP02MZEBQo+c/IwM6VbM0edNk+eqqjX5u96iw5peaCPSg==}
-    peerDependencies:
-      vue-router: ^4.0.12
-    peerDependenciesMeta:
-      vue-router:
-        optional: true
 
   '@babel/helper-string-parser@7.25.9':
     resolution: {integrity: sha512-4A/SCr/2KLd5jrtOMFzaKjVtAei3+2r/NChoBNoZ3EyP/+GlhoaEGoWOZUmFmoITP7zOJyHIMm+DYRd8o3PvHA==}
@@ -1081,15 +1067,6 @@ snapshots:
   '@algolia/requester-node-http@5.20.4':
     dependencies:
       '@algolia/client-common': 5.20.4
-
-  '@auth0/auth0-spa-js@2.3.0': {}
-
-  '@auth0/auth0-vue@2.4.0':
-    dependencies:
-      '@auth0/auth0-spa-js': 2.3.0
-      vue: 3.5.13
-    transitivePeerDependencies:
-      - typescript
 
   '@babel/helper-string-parser@7.25.9': {}
 
