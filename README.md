@@ -26,11 +26,10 @@
 
 ### 后端
 ```bash
-cd backend
 pipenv --python 3
 pipenv shell
 pip install -r requirements.txt
-uvicorn main:app --reload
+python run.py
 ```
 
 ### 前端
