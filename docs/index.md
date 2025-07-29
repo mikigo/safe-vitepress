@@ -5,6 +5,9 @@ layout: home
 hero:
   name: "Safe VitePress"
   tagline: VitePress with FastAPI Authentication
+  image:
+    src: /logo.png
+    alt: VitePress
   actions:
     - theme: brand
       text: Protected Markdown Examples
