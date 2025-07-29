@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "FastAPI Vitepress Auth Template"
+  name: "FastAPI Vitepress Auth"
   tagline: Secure Documentation with FastAPI Authentication
   actions:
     - theme: brand

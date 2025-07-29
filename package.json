@@ -1,11 +1,10 @@
 {
-  "name": "vitepress-auth-template",
+  "name": "vitepress-fastapi-auth",
   "keywords": [],
-  "author": "Nils Jorek <nils.jorek@gmx.de>",
-  "license": "MIT",
+  "author": "mikigo",
   "version": "1.0.0",
-  "description": "Vitepress template to include simple authentication realised with auth0",
-  "repository": "https://github.com/Com-X/vitepress-auth-template.git",
+  "description": "Secure Documentation with FastAPI Authentication",
+  "repository": "https://github.com/mikigo",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -17,7 +16,6 @@
     "preview": "vitepress preview"
   },
   "dependencies": {
-    "@auth0/auth0-vue": "^2.4.0",
     "axios": "^1.11.0",
     "vite": "6.2.1",
     "vitepress": "1.6.3",
