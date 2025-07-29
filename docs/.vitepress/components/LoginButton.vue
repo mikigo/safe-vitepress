@@ -92,14 +92,14 @@ const handleSubmit = async () => {
   padding: 0.6rem 1rem;
   font-size: 0.9rem;
   font-weight: 500;
-  background-color: var(--vp-c-bg-soft);
+  background-color: var(--vp-c-bg);
   color: var(--vp-c-text-1);
-  border: none;
+  border: 2px solid var(--vp-c-brand);
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.2s ease;
   margin-right: 0.75rem;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 /* Modal Styles */

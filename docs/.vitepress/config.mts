@@ -6,8 +6,8 @@ const env = loadEnv('', process.cwd(), '')
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: '/',
-  title: "Vitepress FastAPI Auth",
-  description: "Vitepress with FastAPI Authentication", 
+  title: "Safe VitePress",
+  description: "VitePress with FastAPI Authentication",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [

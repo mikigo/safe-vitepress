@@ -5,8 +5,7 @@
   </div>
   <div v-else-if="requiresAuth && !isAuthenticated" class="auth-login">
     <div class="login-container">
-      <h2>Authentication Required</h2>
-      <p>This content is protected. Please log in to continue.</p>
+      <h2>此文档需要登录才能访问！</h2>
       <LoginButton />
     </div>
   </div>
@@ -70,12 +69,16 @@ onMounted(async () => {
 }
 
 .login-container {
+  width: 100%;
   max-width: 400px;
   padding: 2rem;
   background-color: var(--vp-c-bg-soft);
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .login-button {

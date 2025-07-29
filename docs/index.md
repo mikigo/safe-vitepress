@@ -3,8 +3,8 @@
 layout: home
 
 hero:
-  name: "FastAPI Vitepress Auth"
-  tagline: Secure Documentation with FastAPI Authentication
+  name: "Safe VitePress"
+  tagline: VitePress with FastAPI Authentication
   actions:
     - theme: brand
       text: Protected Markdown Examples
@@ -21,3 +21,4 @@ features:
   - title: Customizable Authentication
     details: Tailor the authentication process to fit your needs with customizable login pages and user management.
 
+---
