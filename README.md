@@ -2,6 +2,8 @@
 
 一个将 VitePress 前端与 FastAPI 后端认证相结合的安全文档解决方案。
 
+![](scripts/demo.jpeg)
+
 ## 特性
 - **FastAPI认证**：基于JWT 的认证系统，支持基于角色的访问控制
 - **Vitepress集成**：受保护的文档路由，带有无缝的认证流程
