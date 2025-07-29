@@ -7,8 +7,8 @@ import os
 from pydantic import BaseModel
 from typing import Optional
 from datetime import timedelta
-from auth import create_access_token, ACCESS_TOKEN_EXPIRE_MINUTES, Token, get_current_active_user
-from models.user import User, User_Pydantic, UserCreate_Pydantic
+from backend.auth import create_access_token, ACCESS_TOKEN_EXPIRE_MINUTES, Token, get_current_active_user
+from backend.models.user import User, User_Pydantic, UserCreate_Pydantic
 
 app = FastAPI(title="Vitepress Auth Backend")
 
@@ -28,7 +28,7 @@ TORTOISE_ORM = {
     },
     "apps": {
         "models": {
-            "models": ["models.user", "aerich.models"],
+            "models": ["backend.models.user", "aerich.models"],
             "default_connection": "default",
         },
     },

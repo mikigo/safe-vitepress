@@ -1,11 +1,13 @@
 import { ref, computed, readonly } from 'vue';
 import axios from 'axios';
+import { useStorage } from '@vueuse/core';
 
 // 后端API地址
 const API_URL = import.meta.env.API_URL || 'http://localhost:8000';
 
 // 状态管理
-const token = ref<string | null>(localStorage.getItem('token'));
+// const token = ref<string | null>(localStorage.getItem('token'));
+const token = useStorage('token', null);
 const user = ref<any>(null);
 const loading = ref(false);
 const error = ref<string | null>(null);

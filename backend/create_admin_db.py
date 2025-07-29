@@ -1,5 +1,5 @@
 from tortoise import Tortoise, run_async
-from models.user import User
+from backend.models.user import User
 import bcrypt
 
 # 数据库配置

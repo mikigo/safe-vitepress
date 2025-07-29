@@ -1,21 +1,17 @@
 {
   "name": "safe-vitepress",
-  "keywords": [],
   "author": "mikigo",
   "version": "1.0.0",
   "description": "Secure Documentation with FastAPI Authentication",
   "repository": "https://github.com/mikigo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "docs:dev": "vitepress dev --port 3000",
-    "docs:build": "vitepress build",
-    "docs:preview": "cross-env NODE_ENV=production vitepress preview --port 3000",
     "dev": "vitepress dev docs",
-    "build": "vitepress build",
-    "preview": "vitepress preview"
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
   },
   "dependencies": {
+    "@vueuse/core": "^13.6.0",
     "axios": "^1.11.0",
     "vite": "6.2.1",
     "vitepress": "1.6.3",
