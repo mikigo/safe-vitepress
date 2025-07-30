@@ -1,10 +1,11 @@
+import uuid
+
+from passlib.context import CryptContext
 from tortoise import fields, models
 from tortoise.contrib.pydantic import pydantic_model_creator
-from passlib.context import CryptContext
-import uuid
-from datetime import datetime, timedelta
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+
 
 class User(models.Model):
     id = fields.UUIDField(pk=True, default=uuid.uuid4, editable=False)
@@ -27,6 +28,8 @@ class User(models.Model):
         table = "users"
         ordering = ["-created_at"]
 
+
 User_Pydantic = pydantic_model_creator(User, name="User")
-UserCreate_Pydantic = pydantic_model_creator(User, name="UserCreate", exclude_readonly=True, exclude=["is_active", "is_admin"])
+UserCreate_Pydantic = pydantic_model_creator(User, name="UserCreate", exclude_readonly=True,
+                                             exclude=["is_active", "is_admin"])
 UserUpdate_Pydantic = pydantic_model_creator(User, name="UserUpdate", exclude_readonly=True)

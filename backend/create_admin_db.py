@@ -1,6 +1,7 @@
-from tortoise import Tortoise, run_async
-from backend.models.user import User
 import bcrypt
+from tortoise import Tortoise, run_async
+
+from backend.models.user import User
 
 DB_CONFIG = {
     'connections': {
@@ -13,6 +14,7 @@ DB_CONFIG = {
         },
     }
 }
+
 
 async def create_admin():
     await Tortoise.init(config=DB_CONFIG)
@@ -32,6 +34,7 @@ async def create_admin():
     )
 
     print(f'Admin user created successfully with ID: {admin_user.id}')
+
 
 if __name__ == '__main__':
     run_async(create_admin())
