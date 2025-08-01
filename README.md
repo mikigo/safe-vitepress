@@ -2,7 +2,21 @@
 
 一个将 VitePress 前端与 FastAPI 后端认证相结合的安全文档解决方案。
 
-![](scripts/demo.jpeg)
+**点击左上角登录按钮**
+
+![](scripts/1.png)
+
+**点击受保护的文档**
+
+![](scripts/2.png)
+
+点击登录
+
+![](scripts/3.png)
+
+**无需登录,可访问公开的文档**
+
+![](scripts/4.png)
 
 ## 特性
 - **FastAPI认证**：基于JWT 的认证系统，支持基于角色的访问控制
@@ -32,8 +46,19 @@ pip install -r requirements.txt
 python run.py
 ```
 
+创建管理员用户:
+```bash
+python create_admin_db.py
+# 根据提示输入用户名和密码
+```
+
 ### 前端
 ```bash
 pnpm i
 pnpm dev
+```
+打包发布:
+
+```bash
+pnpm build
 ```

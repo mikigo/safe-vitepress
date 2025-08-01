@@ -9,7 +9,7 @@ DB_CONFIG = {
     },
     'apps': {
         'models': {
-            'models': ['models.user'],
+            'models': ['backend.models.user'],
             'default_connection': 'default',
         },
     }

@@ -7,7 +7,7 @@ from datetime import timedelta
 from backend.auth import create_access_token, ACCESS_TOKEN_EXPIRE_MINUTES, Token, get_current_active_user
 from backend.models.user import User, User_Pydantic, UserCreate_Pydantic
 
-app = FastAPI(title="Vitepress Auth Backend")
+app = FastAPI(title="Safe Vitepress Backend")
 
 app.add_middleware(
     CORSMiddleware,

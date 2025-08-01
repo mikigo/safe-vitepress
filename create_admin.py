@@ -3,11 +3,7 @@ import json
 import requests
 
 def create_admin_user(admin_username: str, admin_password: str):
-    """
-    Create an admin user in the backend.
-    This script sends a POST request to the backend API to create a user.
-    The user will need to be set as an admin in the database manually.
-    """
+
     API_URL = 'http://localhost:8000'
 
     admin_data = {
