@@ -16,7 +16,7 @@ DB_CONFIG = {
 }
 
 
-async def create_admin():
+async def create_admin(admin_username: str, admin_password: str):
     await Tortoise.init(config=DB_CONFIG)
     await Tortoise.generate_schemas()
 
@@ -25,9 +25,9 @@ async def create_admin():
         print('Admin user already exists.')
         return
 
-    hashed_password = bcrypt.hashpw('adminpassword'.encode('utf-8'), bcrypt.gensalt())
+    hashed_password = bcrypt.hashpw(admin_password.encode('utf-8'), bcrypt.gensalt())
     admin_user = await User.create(
-        username='admin',
+        username=admin_username,
         email='admin@example.com',
         hashed_password=hashed_password.decode('utf-8'),
         is_admin=True
@@ -37,4 +37,10 @@ async def create_admin():
 
 
 if __name__ == '__main__':
-    run_async(create_admin())
+    admin_username = input('Enter admin username: ')
+    admin_password = input('Enter admin password: ')
+    check_password = input('Re-enter admin password: ')
+    if admin_password != check_password:
+        print('Passwords do not match. Exiting.')
+        exit(1)
+    run_async(create_admin(admin_username, admin_password))
